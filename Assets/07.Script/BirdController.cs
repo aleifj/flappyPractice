@@ -5,15 +5,15 @@ using UnityEngine;
 public class BirdController : MonoBehaviour
 {
     [SerializeField] private float velocity = 1.5f;
-    [SerializeField] private float rotateSpeed = 1.0f;
+    [SerializeField] private float rotateSpeed = 10f;
 
     private Rigidbody2D rigid;
-    void Start()
+    private void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
     }
 
-    void Update()
+    private void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {//마우스클릭을 하면 위로 올라감.
@@ -24,6 +24,7 @@ public class BirdController : MonoBehaviour
     {
         transform.rotation = Quaternion.Euler(0, 0, rigid.velocity.y * rotateSpeed);
     }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         GameManager.instance.GameOver();

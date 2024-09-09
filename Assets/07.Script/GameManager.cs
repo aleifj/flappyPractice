@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         gameOverUI.SetActive(true);
-        Time.timeScale = 0f;
+        Time.timeScale = 0f;//¡◊¿∏∏È ∞‘¿”Ω√∞£¿ª ∏ÿ√„.
     }
     public void restartGame()
     {
