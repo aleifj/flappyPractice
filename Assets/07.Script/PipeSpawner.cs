@@ -9,18 +9,20 @@ public class PipeSpawner : MonoBehaviour
     [SerializeField] private GameObject pipePrefab;//파이프 프레팝 연결
     [SerializeField] private GameObject pipePrefabRed;//빨간 파이프 연결
     
-
     private float timer;
 
     void Update()
     {
-        if(timer > maxTime)
-        {
-            SpawnPipe();
-            timer = 0;
+        //게임상태가 PLAY일때만 파이프를 생성하게 한다.
+        if (GameManager.instance.GameState == GameManager.State.PLAY)
+        {//게임상태(state)가 PLAY일때.
+            if (timer > maxTime)
+            {
+                SpawnPipe();//파이프스폰 시작.
+                timer = 0;
+            }
+            timer = timer + Time.deltaTime;
         }
-        timer = timer + Time.deltaTime;
-
 
     }
     private void SpawnPipe()
@@ -30,8 +32,8 @@ public class PipeSpawner : MonoBehaviour
         //랜덤으로 녹색, 빨간색 파이프 선택
         GameObject pipPf = (Random.Range(0, 100) > 10) ? pipePrefab : pipePrefabRed;
 
-         //instantiate로 생성, 생성된 객체는 pipe라는 gameObject에 할당.
-         GameObject pipe = Instantiate(pipPf, spawnPos, Quaternion.identity);
+        //instantiate로 생성, 생성된 객체는 pipe라는 gameObject에 할당.
+        GameObject pipe = Instantiate(pipPf, spawnPos, Quaternion.identity);
         Destroy(pipe, 5.0f);//5초뒤 파괴.
     }
 }
