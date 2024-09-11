@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     [SerializeField] private SpriteRenderer BackGround;
+    [SerializeField] private Animator floorAnim;
     [SerializeField] private AudioClip acReady;
     [SerializeField] private AudioClip acHit;
     [SerializeField] private GameObject gameOverUI;
@@ -74,12 +75,17 @@ public class GameManager : MonoBehaviour
     {
         ChangeState(State.GAMEOVER);
         PlayAudio(acHit);
-        gameOverUI.SetActive(true);
-        Time.timeScale = 0f;//¡◊¿∏∏È ∞‘¿”Ω√∞£¿ª ∏ÿ√„.
+        floorAnim.enabled = false;
+        StartCoroutine(StopTimer());
     }
 
     public void restartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    IEnumerator StopTimer()
+    {
+        yield return new WaitForSeconds(2f);
+        Time.timeScale = 0f;//¡◊¿∏∏È ∞‘¿”Ω√∞£¿ª ∏ÿ√„.
     }
 }

@@ -8,6 +8,7 @@ public class BirdController : MonoBehaviour
     [SerializeField] private float velocity = 1.5f;
     [SerializeField] private float rotateSpeed = 10f;
     [SerializeField] private AudioClip acWing;
+    [SerializeField] private AudioClip acDie;
 
     private Rigidbody2D rigid;
     private GameManager gmi;//자주 쓸거같은 instance는 줄여 쓸 수 있다.
@@ -45,6 +46,15 @@ public class BirdController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        gmi.GameOver();//instance는 using으로 등록할 수 없어 이렇게 씀.
+        if (gmi.GameState == GMState.PLAY)
+        {
+            gmi.GameOver();//instance는 using으로 등록할 수 없어 이렇게 씀.
+            //새의 Flap애니메이션을 멈춘다.
+            GetComponent<Animator>().enabled = false;
+            if (transform.position.y > 0)
+            {//새의 Y좌표에 따라 audio재생
+                gmi.PlayAudio(acDie);
+            }
+        }
     }
 }

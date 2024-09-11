@@ -160,6 +160,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PipeSpeed: 0.65
+  upPipe: {fileID: 634983474278969521}
+  downPipe: {fileID: 946551297853610996}
 --- !u!114 &3840290932430422910
 MonoBehaviour:
   m_ObjectHideFlags: 0
