@@ -78,6 +78,10 @@ public class GameManager : MonoBehaviour
         floorAnim.enabled = false;
         StartCoroutine(StopTimer());
     }
+    public void GameHiscore()
+    {
+        ChangeState(State.HISCORE);
+    }
 
     public void restartGame()
     {
