@@ -97,7 +97,11 @@ MonoBehaviour:
   rankText: {fileID: 5747779851451163579}
   dateText: {fileID: 5747779851187536643}
   scoreText: {fileID: 5747779851305664814}
-  medalSprite: []
+  medalSprite:
+  - {fileID: -750825114, guid: e4eaae39fe4f9bd47bd0c012af304ee1, type: 3}
+  - {fileID: -615699501, guid: e4eaae39fe4f9bd47bd0c012af304ee1, type: 3}
+  - {fileID: -1390163782, guid: e4eaae39fe4f9bd47bd0c012af304ee1, type: 3}
+  - {fileID: 811662503, guid: e4eaae39fe4f9bd47bd0c012af304ee1, type: 3}
 --- !u!1 &5747779851187536641
 GameObject:
   m_ObjectHideFlags: 0

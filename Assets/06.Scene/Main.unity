@@ -453,6 +453,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 542294234}
     m_Modifications:
+    - target: {fileID: 3454655402727410440, guid: 6e7628b92f9cedc448a41630b368abf9, type: 3}
+      propertyPath: medalSprite.Array.data[0]
+      value: 
+      objectReference: {fileID: -750825114, guid: e4eaae39fe4f9bd47bd0c012af304ee1, type: 3}
     - target: {fileID: 5747779849975458573, guid: 6e7628b92f9cedc448a41630b368abf9, type: 3}
       propertyPath: m_Name
       value: RankPrefab
@@ -805,6 +809,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 542294234}
     m_Modifications:
+    - target: {fileID: 3454655402727410440, guid: 6e7628b92f9cedc448a41630b368abf9, type: 3}
+      propertyPath: medalSprite.Array.data[0]
+      value: 
+      objectReference: {fileID: 811662503, guid: e4eaae39fe4f9bd47bd0c012af304ee1, type: 3}
     - target: {fileID: 5747779849975458573, guid: 6e7628b92f9cedc448a41630b368abf9, type: 3}
       propertyPath: m_Name
       value: RankPrefab (3)
@@ -1044,6 +1052,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 667358310}
+  - component: {fileID: 667358311}
   m_Layer: 5
   m_Name: HiScore
   m_TagString: Untagged
@@ -1072,6 +1081,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &667358311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667358309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b63f3934367e944b919b198b094c9ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ranking:
+  - {fileID: 1484110801}
+  - {fileID: 1754574285}
+  - {fileID: 1413755835}
+  - {fileID: 2011803427}
+  - {fileID: 2006654463}
 --- !u!1 &686171154
 GameObject:
   m_ObjectHideFlags: 0
@@ -1718,6 +1745,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 830392371}
+  ranking: {fileID: 667358311}
 --- !u!4 &831276717
 Transform:
   m_ObjectHideFlags: 0
@@ -2695,6 +2723,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 542294234}
     m_Modifications:
+    - target: {fileID: 3454655402727410440, guid: 6e7628b92f9cedc448a41630b368abf9, type: 3}
+      propertyPath: medalSprite.Array.data[0]
+      value: 
+      objectReference: {fileID: -1390163782, guid: e4eaae39fe4f9bd47bd0c012af304ee1, type: 3}
     - target: {fileID: 5747779849975458573, guid: 6e7628b92f9cedc448a41630b368abf9, type: 3}
       propertyPath: m_Name
       value: RankPrefab (1)
@@ -2753,15 +2785,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5747779849975458574, guid: 6e7628b92f9cedc448a41630b368abf9, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5747779849975458574, guid: 6e7628b92f9cedc448a41630b368abf9, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5747779849975458574, guid: 6e7628b92f9cedc448a41630b368abf9, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5747779849975458574, guid: 6e7628b92f9cedc448a41630b368abf9, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2790,6 +2822,28 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5747779849975458574, guid: 6e7628b92f9cedc448a41630b368abf9, type: 3}
   m_PrefabInstance: {fileID: 1413755831}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1413755835 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3454655402727410440, guid: 6e7628b92f9cedc448a41630b368abf9, type: 3}
+  m_PrefabInstance: {fileID: 1413755831}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d94b2a505001a84e826b3f16a06fadf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1484110801 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3454655402727410440, guid: 6e7628b92f9cedc448a41630b368abf9, type: 3}
+  m_PrefabInstance: {fileID: 444143070}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d94b2a505001a84e826b3f16a06fadf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1509606634
 GameObject:
   m_ObjectHideFlags: 0
@@ -3313,6 +3367,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5747779849975458574, guid: 6e7628b92f9cedc448a41630b368abf9, type: 3}
   m_PrefabInstance: {fileID: 1754574281}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1754574285 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3454655402727410440, guid: 6e7628b92f9cedc448a41630b368abf9, type: 3}
+  m_PrefabInstance: {fileID: 1754574281}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d94b2a505001a84e826b3f16a06fadf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1860030614
 GameObject:
   m_ObjectHideFlags: 0
@@ -3892,6 +3957,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1895012047}
   m_CullTransparentMesh: 1
+--- !u!114 &2006654463 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3454655402727410440, guid: 6e7628b92f9cedc448a41630b368abf9, type: 3}
+  m_PrefabInstance: {fileID: 613077679}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d94b2a505001a84e826b3f16a06fadf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2011803423
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3899,6 +3975,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 542294234}
     m_Modifications:
+    - target: {fileID: 3454655402727410440, guid: 6e7628b92f9cedc448a41630b368abf9, type: 3}
+      propertyPath: medalSprite.Array.data[0]
+      value: 
+      objectReference: {fileID: 811662503, guid: e4eaae39fe4f9bd47bd0c012af304ee1, type: 3}
     - target: {fileID: 5747779849975458573, guid: 6e7628b92f9cedc448a41630b368abf9, type: 3}
       propertyPath: m_Name
       value: RankPrefab (2)
@@ -3994,6 +4074,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5747779849975458574, guid: 6e7628b92f9cedc448a41630b368abf9, type: 3}
   m_PrefabInstance: {fileID: 2011803423}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2011803427 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3454655402727410440, guid: 6e7628b92f9cedc448a41630b368abf9, type: 3}
+  m_PrefabInstance: {fileID: 2011803423}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d94b2a505001a84e826b3f16a06fadf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2050546431
 GameObject:
   m_ObjectHideFlags: 0

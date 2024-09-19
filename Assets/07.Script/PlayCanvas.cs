@@ -22,8 +22,18 @@ public class PlayCanvas : MonoBehaviour
         scorePlay.text = smi.Score.ToString();
     }
 
-    void Update()
+    public void UpdateResult()
     {
-        
+        if(smi.Rank < 3)//3등을 넘으면
+        {
+            medal.sprite = medalSprite[smi.Rank];//메달 표시
+        }
+        else
+        {
+            medal.gameObject.SetActive(false);//아니면 표시 안함.
+        }
+        scoreResult.text = smi.Score.ToString();
+        bestText.text = PlayerPrefs.GetInt("RANKSCORE0", 0).ToString();//베스트스코어는 최고스코어 값 표시.
+
     }
 }
